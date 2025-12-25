@@ -64,6 +64,20 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
   2. Clone repository backend:
      ```bash
      git clone <repo-backend-url>
-  3. lalu masuk ke directory procurement-system:
+  3. masuk ke directory procurement-system:
      ```bash
      cd procurement-system
+  4. Install dependencies Go:
+     ```bash
+     go mod tidy
+  5. Buat database MySQL:
+     ```bash
+     CREATE DATABASE procurement;
+  6. Buat /sesuaikan file .env di folder backend:
+     ```bash
+     DB_USER=root
+     DB_PASS=
+     DB_HOST=localhost
+     DB_PORT=3306
+     DB_NAME=procurement
+     JWT_SECRET=super_rahasia
