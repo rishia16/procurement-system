@@ -86,12 +86,12 @@ Frontend
      go run main.go
      #- Server akan berjalan di http://localhost:3000 -#
      
-# ⚙️ Persiapan Frontend
+## ⚙️ Persiapan Frontend
   1. didalam directory procurement arahkan masuk menggunakan Visual Studio Code kedalam directory procurement-frontend
   2. Tidak perlu install apapun (semua library via CDN).
   3. Buka login.html di VS Code menggunakan Live Server / browser untuk memulai.
 
-# 📝 Cara Menggunakan Aplikasi Frontend
+## 📝 Cara Menggunakan Aplikasi Frontend
 - Register & Login
   - Akses login.html
   - Masukkan username & password
@@ -106,7 +106,7 @@ Frontend
   - Klik Submit Order → backend otomatis hitung subtotal & grand total, update stok
   - Notifikasi sukses/error muncul via SweetAlert2
 
-# 🛠️ Endpoint API Backend
+## 🛠️ Endpoint API Backend
 | Method | Endpoint         | Keterangan                   | Protected |
 | ------ | ---------------- | ---------------------------- | --------- |
 | POST   | /register        | Register user                | ❌         |
@@ -119,7 +119,7 @@ Frontend
 
 > Catatan: Semua endpoint `/api/...` protected → membutuhkan token JWT.
 
-# 📊 Rubrik Penilaian
+## 📊 Rubrik Penilaian
   Backend
   - Setup, Auth, Schema, Logic, Security
   - Bonus: DB Transaction, Webhook
@@ -130,7 +130,7 @@ Frontend
   - Fetch Data, DOM Manipulation, Submit JSON
   - Bonus: Event Delegation, Reusable AJAX
 
-# 📝 Catatan Teknis Tambahan
+## 📝 Catatan Teknis Tambahan
   > - Cara reset database: hapus tabel & buat ulang sesuai schema
   > - Test API menggunakan Postman (import Simple_Procurement_System.postman_collection.json)
   > - Port default backend: http://localhost:3000 (atau menggunakan import environtment Local_Procurement_Env.postman_environment.json)
