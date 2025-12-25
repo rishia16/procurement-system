@@ -196,8 +196,3 @@ Frontend
 4. **Frontend:**  
    - Setelah login, JWT disimpan di `localStorage`  
    - Setiap AJAX request ke backend menambahkan header `Authorization: Bearer <token>` secara otomatis (menggunakan wrapper `api.js`).
-
-> 💡 Tips:  
-> - Semua screenshot disimpan di folder `/screenshots` agar path tetap valid di README.  
-> - Penjelasan setiap gambar menjelaskan fungsionalitas dan bagaimana JWT digunakan untuk autentikasi.
-
