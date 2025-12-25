@@ -85,4 +85,35 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
   7. Jalankan backend:
      ```bash
      go run main.go
-     #- http://localhost:3000 -#
+     #- Server akan berjalan di http://localhost:3000 -#
+     
+# ⚙️ Persiapan Frontend
+  1. didalam directory procurement arahkan masuk menggunakan Visual Studio Code kedalam directory procurement-frontend
+  2. Tidak perlu install apapun (semua library via CDN).
+  3. Buka login.html di VS Code menggunakan Live Server / browser untuk memulai.
+
+# 📝 Cara Menggunakan Aplikasi Frontend
+- Register & Login
+    -Akses login.html
+
+Masukkan username & password
+
+Klik Login → token disimpan otomatis di localStorage
+
+2. Dashboard
+
+Tampilkan daftar items & stok
+
+Link ke halaman Create Purchase
+
+3. Create Purchase
+
+Pilih Supplier
+
+Pilih Item & input Qty, klik Tambah
+
+Item masuk ke keranjang tabel
+
+Klik Submit Order → backend otomatis hitung subtotal & grand total, update stok
+
+Notifikasi sukses/error muncul via SweetAlert2
