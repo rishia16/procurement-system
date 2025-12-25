@@ -94,7 +94,7 @@ Frontend
      - Git
   2. Clone repository backend:
      ```bash
-     git clone <repo-backend-url>
+     git clone https://github.com/rishia16/procurement-system.git
   3. masuk ke directory procurement-system:
      ```bash
      cd procurement-system
