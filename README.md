@@ -81,4 +81,4 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
      DB_PORT=3306
      DB_NAME=procurement
      JWT_SECRET=super_rahasia
-  ##### Sesuaikan DB_USER, DB_PASS, dll. dengan setup MySQL masing-masing
+  #####     Sesuaikan DB_USER, DB_PASS, dll. dengan setup MySQL masing-masing
