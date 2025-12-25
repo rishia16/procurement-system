@@ -2,10 +2,10 @@
 Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Supplier. Terdiri dari Backend (Go + Fiber + MySQL) dan Frontend (HTML + jQuery + Bootstrap).
 
 [![Go](https://img.shields.io/badge/Go-1.20-blue)](https://golang.org/)
-[![Fiber](https://img.shields.io/badge/Fiber-2.50-lightgrey)](https://gofiber.io/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)](https://www.mysql.com/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)](https://getbootstrap.com/)
-[![jQuery](https://img.shields.io/badge/jQuery-3.7.1-lightblue)](https://jquery.com/)
+[![Fiber](https://img.shields.io/badge/Fiber-latest-lightgrey)](https://gofiber.io/) 
+[![MySQL](https://img.shields.io/badge/MySQL-latest-blue)](https://www.mysql.com/) 
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)](https://getbootstrap.com/) 
+[![jQuery](https://img.shields.io/badge/jQuery-3.7.1-lightblue)](https://jquery.com/) 
 [![JWT](https://img.shields.io/badge/JWT-Secure-orange)](https://jwt.io/)
 
 ## 📌Fitur Utama
