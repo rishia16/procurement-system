@@ -135,28 +135,69 @@ Frontend
   > - Test API menggunakan Postman (import Simple_Procurement_System.postman_collection.json)
   > - Port default backend: http://localhost:3000 (atau menggunakan import environtment Local_Procurement_Env.postman_environment.json)
 
-## 📸 Screenshots / Demo
+# 📸 Screenshots / Demo
 
-## 🖥️ Frontend
+## 🖥️ Backend Screenshots
 
-### Login Page
-![Login Page](screenshots/login.png)
-*Keterangan: Halaman login dengan input username & password.*
+### 1. Register User
+![Register](screenshots/register.png)  
+*Keterangan:* Halaman/register endpoint untuk menambahkan user baru. Password di-hash dan disimpan di database. JWT belum di-generate di tahap register.
 
-### Dashboard & Inventory
-![Dashboard](screenshots/dashboard.png)
-*Keterangan: Menampilkan daftar item beserta stok yang tersedia.*
+### 2. Login & Save JWT
+![Login & JWT](screenshots/login-save-jwt.png)  
+*Keterangan:* Login user valid → server mengembalikan JWT token. Token disimpan di localStorage atau client untuk akses endpoint protected.
 
-### Create Purchase
-![Create Purchase](screenshots/create_purchase.png)
-*Keterangan: Pilih supplier, tambah item ke keranjang, klik Submit Order.*
+### 3. Create Item
+![Create Item](screenshots/create-item.png)  
+*Keterangan:* Endpoint `/api/items` untuk menambahkan item baru. JWT dikirim di header Authorization: `Bearer <token>` untuk validasi akses.
 
-## ⚡ Backend / API Testing
+### 4. Create Supplier
+![Create Supplier](screenshots/create-supplier.png)  
+*Keterangan:* Endpoint `/api/suppliers` untuk menambahkan supplier baru. JWT token yang valid wajib dikirim di header.
 
-### API Response Example
-![API Testing](screenshots/api_response.png)
-*Keterangan: Contoh response JSON saat membuat transaksi purchase via Postman.*
+### 5. Create Purchasing
+![Create Purchasing](screenshots/create-purchasing.png)  
+*Keterangan:* Membuat transaksi pembelian. Backend menghitung subtotal & grand total berdasarkan harga di database. Stok item otomatis di-update. Endpoint ini **protected**, membutuhkan JWT token.
 
-### Webhook / Transaction Success
-![Webhook Demo](screenshots/webhook_demo.png)
-*Keterangan: Notifikasi berhasil dikirim ke webhook setelah transaksi berhasil.*
+---
+
+## 🖥️ Frontend Screenshots
+
+### 1. Login Page
+![Login Page](screenshots/login.png)  
+*Keterangan:* Form login yang mengirim request ke backend `/login`. JWT token diterima backend disimpan di browser (localStorage) untuk autentikasi endpoint berikutnya.
+
+### 2. Dashboard / Inventory
+![Dashboard](screenshots/dashboard.png)  
+*Keterangan:* Menampilkan daftar item, stok, dan link ke halaman Create Purchase. Frontend mengambil data menggunakan AJAX dengan JWT di header.
+
+### 3. Create Purchase Page
+![Create Purchase](screenshots/purchase.png)  
+*Keterangan:* User memilih supplier, memilih item, input Qty, klik "Tambah" → item masuk ke keranjang. Submit Order mengirim JSON ke backend dengan JWT token. Backend menghitung subtotal & grand total, update stok, dan mengirim notifikasi sukses/error.
+
+---
+
+## 🔐 Studi Kasus JWT
+
+1. **Register:**  
+   - Endpoint `/register` membuat user baru. JWT **tidak** dibuat di register.
+
+2. **Login:**  
+   - Endpoint `/login` mengembalikan JWT token. Token ini menyimpan `userID`, `username`, `role`, dan expiry.
+   - Contoh header JWT saat request ke endpoint protected:  
+     ```
+     Authorization: Bearer <JWT_TOKEN>
+     ```
+
+3. **Endpoint Protected:**  
+   - Semua endpoint `/api/items`, `/api/suppliers`, `/api/purchasings` memeriksa JWT di middleware sebelum melakukan aksi.  
+   - Jika token tidak valid atau expired → request ditolak (HTTP 401 Unauthorized).
+
+4. **Frontend:**  
+   - Setelah login, JWT disimpan di `localStorage`  
+   - Setiap AJAX request ke backend menambahkan header `Authorization: Bearer <token>` secara otomatis (menggunakan wrapper `api.js`).
+
+> 💡 Tips:  
+> - Semua screenshot disimpan di folder `/screenshots` agar path tetap valid di README.  
+> - Penjelasan setiap gambar menjelaskan fungsionalitas dan bagaimana JWT digunakan untuk autentikasi.
+
