@@ -63,7 +63,6 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
      - Git
   2. Clone repository backend:
      ```bash
-git clone <repo-backend-url>
-cd backend
-
+     git clone <repo-backend-url>
+     cd backend
   4. aydgaudui
