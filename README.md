@@ -1,7 +1,7 @@
-# Procurement System (Sistem Pengadaan Barang)
+### 🚀 Procurement System (Sistem Pengadaan Barang)
 Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Supplier. Terdiri dari Backend (Go + Fiber + MySQL) dan Frontend (HTML + jQuery + Bootstrap).
 
-## Fitur Utama Backend
+## 📌Fitur Utama Backend
 
 | Fitur | Keterangan |
 |-------|-----------|
@@ -10,7 +10,7 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 | Purchasing Transaction | Buat pembelian baru, hitung subtotal & grand total, update stok otomatis |
 | Bonus | Transaction ACID (rollback jika gagal), Webhook async notifikasi |
 
-## Frontend
+## 📌Fitur Utama Frontend
 
 - Login Page
 - Dashboard & Inventory
