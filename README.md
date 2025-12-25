@@ -108,13 +108,25 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
   - Notifikasi sukses/error muncul via SweetAlert2
 
 # 🛠️ Endpoint API Backend
-| Method | Endpoint          | Keterangan                              |
-|--------|-----------------|----------------------------------------|
-| POST   | /register        | Register user                           |
-| POST   | /login           | Login user, return JWT token            |
-| GET    | /api/items       | List items                              |
-| POST   | /api/items       | Tambah item                             |
-| GET    | /api/suppliers   | List suppliers                           |
-| POST   | /api/suppliers   | Tambah supplier                          |
-| POST   | /api/purchasings | Buat purchase baru (protected)           |
+| Method | Endpoint         | Keterangan                   | Protected |
+| ------ | ---------------- | ---------------------------- | --------- |
+| POST   | /register        | Register user                | ❌         |
+| POST   | /login           | Login user, return JWT token | ❌         |
+| GET    | /api/items       | List items                   | ✅         |
+| POST   | /api/items       | Tambah item                  | ✅         |
+| GET    | /api/suppliers   | List suppliers               | ✅         |
+| POST   | /api/suppliers   | Tambah supplier              | ✅         |
+| POST   | /api/purchasings | Buat purchase baru           | ✅         |
+
 > Catatan: Semua endpoint `/api/...` protected → membutuhkan token JWT.
+
+# 📊 Rubrik Penilaian
+  - Backend
+    - Setup, Auth, Schema, Logic, Security
+    - Bonus: DB Transaction, Webhook
+
+  - Frontend
+    - Tech (jQuery & CDN)
+    - Auth (Login + Token)
+    - Fetch Data, DOM Manipulation, Submit JSON
+    - Bonus: Event Delegation, Reusable AJAX
