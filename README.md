@@ -62,5 +62,8 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
      - MySQL / PostgreSQL
      - Git
   2. Clone repository backend:
-  3.     git clone <repo-backend-url>
-  3. aydgaudui
+     ```bash
+git clone <repo-backend-url>
+cd backend
+
+  4. aydgaudui
