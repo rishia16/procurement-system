@@ -1,6 +1,13 @@
 # 🚀 Procurement System (Sistem Pengadaan Barang)
 Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Supplier. Terdiri dari Backend (Go + Fiber + MySQL) dan Frontend (HTML + jQuery + Bootstrap).
 
+[![Go](https://img.shields.io/badge/Go-1.20-blue)](https://golang.org/)
+[![Fiber](https://img.shields.io/badge/Fiber-2.50-lightgrey)](https://gofiber.io/)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0-blue)](https://www.mysql.com/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)](https://getbootstrap.com/)
+[![jQuery](https://img.shields.io/badge/jQuery-3.7.1-lightblue)](https://jquery.com/)
+[![JWT](https://img.shields.io/badge/JWT-Secure-orange)](https://jwt.io/)
+
 ## 📌Fitur Utama
 Backend
 | Fitur | Keterangan |
@@ -16,6 +23,31 @@ Frontend
 - Create Purchase Page (keranjang + submit order)
 - Reusable AJAX & Event Delegation
 - SweetAlert2 untuk notifikasi/error handling
+
+## 🛠 Tech Stack
+
+### Backend
+- **Language**: Go (Golang)
+- **Framework**: Fiber
+- **ORM**: GORM
+- **Database**: MySQL (XAMPP / lokal compatible)
+- **Authentication**: JWT (JSON Web Token)
+- **Security**: Password hashing (bcrypt)
+- **Transaction**: ACID Transaction support (rollback jika gagal)
+- **HTTP Client / Webhook**: net/http (async POST notification)
+- **Environment**: dotenv (`.env` file)
+- **Dependency Management**: Go Modules (`go.mod` / `go.sum`)
+
+### Frontend
+- **Markup / Styling**: HTML, CSS, Bootstrap 5
+- **Behavior / Interactivity**: JavaScript, jQuery
+- **AJAX Requests**: jQuery AJAX wrapper (`api.js`)
+- **Authentication Handling**: JWT token di `localStorage`
+- **Notifications / Alerts**: SweetAlert2
+- **Structure**: Dashboard, Create Purchase page, reusable components
+- **Dev Tools**: Browser Live Server / VS Code
+- **CDN Usage**: Bootstrap, jQuery, SweetAlert2
+
 
 ## 📂 PROCUREMENT-SYSTEM
 - 📁 config
