@@ -94,7 +94,7 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 
 # 📝 Cara Menggunakan Aplikasi Frontend
 - Register & Login
-    -Akses login.html
+  - Akses login.html
 
 Masukkan username & password
 
