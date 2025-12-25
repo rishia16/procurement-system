@@ -1,8 +1,8 @@
 # 🚀 Procurement System (Sistem Pengadaan Barang)
 Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Supplier. Terdiri dari Backend (Go + Fiber + MySQL) dan Frontend (HTML + jQuery + Bootstrap).
 
-## 📌Fitur Utama Backend
-
+## 📌Fitur Utama
+Backend
 | Fitur | Keterangan |
 |-------|-----------|
 | User Authentication | Register & Login (JWT Token) |
@@ -10,8 +10,7 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 | Purchasing Transaction | Buat pembelian baru, hitung subtotal & grand total, update stok otomatis |
 | Bonus | Transaction ACID (rollback jika gagal), Webhook async notifikasi |
 
-## 📌Fitur Utama Frontend
-
+Frontend
 - Login Page
 - Dashboard & Inventory
 - Create Purchase Page (keranjang + submit order)
@@ -56,7 +55,7 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 - 📄 Local_Procurement_Env.postman_environment.json
 - 📄 Simple_Procurement_System.postman_collection.json
 
-# ⚙️ Persiapan Backend
+## ⚙️ Persiapan Backend
   1. Pastikan sudah menginstall:
      - Go >= 1.20
      - MySQL / PostgreSQL
