@@ -95,25 +95,26 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 # 📝 Cara Menggunakan Aplikasi Frontend
 - Register & Login
   - Akses login.html
+  - Masukkan username & password
+  - Klik Login → token disimpan otomatis di localStorage
+- Dashboard
+  - Tampilkan daftar items & stok
+  - Link ke halaman Create Purchase
+- Create Purchase
+  - Pilih Supplier
+  - Pilih Item & input Qty, klik Tambah
+  - Item masuk ke keranjang tabel
+  - Klik Submit Order → backend otomatis hitung subtotal & grand total, update stok
+  - Notifikasi sukses/error muncul via SweetAlert2
 
-Masukkan username & password
+# 🛠️ Endpoint API Backend
+| Method | Endpoint          | Keterangan                              |
+|--------|-----------------|----------------------------------------|
+| POST   | /register        | Register user                           |
+| POST   | /login           | Login user, return JWT token            |
+| GET    | /api/items       | List items                              |
+| POST   | /api/items       | Tambah item                             |
+| GET    | /api/suppliers   | List suppliers                           |
+| POST   | /api/suppliers   | Tambah supplier                          |
+| POST   | /api/purchasings | Buat purchase baru (protected)           |
 
-Klik Login → token disimpan otomatis di localStorage
-
-2. Dashboard
-
-Tampilkan daftar items & stok
-
-Link ke halaman Create Purchase
-
-3. Create Purchase
-
-Pilih Supplier
-
-Pilih Item & input Qty, klik Tambah
-
-Item masuk ke keranjang tabel
-
-Klik Submit Order → backend otomatis hitung subtotal & grand total, update stok
-
-Notifikasi sukses/error muncul via SweetAlert2
