@@ -76,9 +76,9 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
   6. Buat /sesuaikan file .env di folder backend:
      ```bash
      DB_USER=root
-    DB_PASS=
-    DB_HOST=localhost
-    DB_PORT=3306
-    DB_NAME=procurement
-    JWT_SECRET=super_rahasia
-    # Sesuaikan DB_USER, DB_PASS, dll. dengan setup MySQL masing-masing
+     DB_PASS=
+     DB_HOST=localhost
+     DB_PORT=3306
+     DB_NAME=procurement
+     JWT_SECRET=super_rahasia
+  # Sesuaikan DB_USER, DB_PASS, dll. dengan setup MySQL masing-masing
