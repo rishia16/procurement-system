@@ -81,11 +81,11 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
      DB_PORT=3306
      DB_NAME=procurement
      JWT_SECRET=super_rahasia
-     # > Sesuaikan DB_USER, DB_PASS, dll. dengan setup MySQL masing-masing -#
+     #- Sesuaikan DB_USER, DB_PASS, dll. dengan setup MySQL masing-masing -#
   7. Jalankan backend:
      ```bash
      go run main.go
-     # > Server akan berjalan di http://localhost:3000 -#
+     #- Server akan berjalan di http://localhost:3000 -#
      
 # ⚙️ Persiapan Frontend
   1. didalam directory procurement arahkan masuk menggunakan Visual Studio Code kedalam directory procurement-frontend
@@ -108,7 +108,7 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
   - Notifikasi sukses/error muncul via SweetAlert2
 
 # 🛠️ Endpoint API Backend
-| Method | Endpoint          | Keterangan                              |
+**| Method | Endpoint          | Keterangan                              |
 |--------|-----------------|----------------------------------------|
 | POST   | /register        | Register user                           |
 | POST   | /login           | Login user, return JWT token            |
@@ -118,4 +118,4 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 | POST   | /api/suppliers   | Tambah supplier                          |
 | POST   | /api/purchasings | Buat purchase baru (protected)           |
 
-> Catatan: Semua endpoint `/api/...` protected → membutuhkan token JWT.
+> Catatan: Semua endpoint `/api/...` protected → membutuhkan token JWT.**
