@@ -58,6 +58,7 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 
 
 
+
 ⚙️ Persiapan Backend
 1. Pastikan sudah menginstall:
    - Go >= 1.20
