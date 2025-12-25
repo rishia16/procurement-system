@@ -121,12 +121,17 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 > Catatan: Semua endpoint `/api/...` protected → membutuhkan token JWT.
 
 # 📊 Rubrik Penilaian
-  - Backend
-    - Setup, Auth, Schema, Logic, Security
-    - Bonus: DB Transaction, Webhook
+  Backend
+  - Setup, Auth, Schema, Logic, Security
+  - Bonus: DB Transaction, Webhook
+  
+  Frontend
+  - Tech (jQuery & CDN)
+  - Auth (Login + Token)
+  - Fetch Data, DOM Manipulation, Submit JSON
+  - Bonus: Event Delegation, Reusable AJAX
 
-  - Frontend
-    - Tech (jQuery & CDN)
-    - Auth (Login + Token)
-    - Fetch Data, DOM Manipulation, Submit JSON
-    - Bonus: Event Delegation, Reusable AJAX
+# 📝 Catatan Teknis Tambahan
+  - Cara reset database: hapus tabel & buat ulang sesuai schema
+  - Test API menggunakan Postman (import Simple_Procurement_System.postman_collection.json)
+  - Port default backend: http://localhost:3000 (atau menggunakan import environtment Local_Procurement_Env.postman_environment.json)
