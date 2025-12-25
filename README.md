@@ -118,3 +118,4 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 | POST   | /api/suppliers   | Tambah supplier                          |
 | POST   | /api/purchasings | Buat purchase baru (protected)           |
 
+> Catatan: Semua endpoint `/api/...` protected → membutuhkan token JWT.
