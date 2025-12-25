@@ -56,8 +56,8 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 - 📄 Local_Procurement_Env.postman_environment.json
 - 📄 Simple_Procurement_System.postman_collection.json
 
-⚙️ Persiapan Backend
-1. Pastikan sudah menginstall:
+# ⚙️ Persiapan Backend
+    1. Pastikan sudah menginstall:
    - Go >= 1.20
    - MySQL / PostgreSQL
    - Git
