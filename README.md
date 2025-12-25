@@ -57,10 +57,10 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
 - 📄 Simple_Procurement_System.postman_collection.json
 
 # ⚙️ Persiapan Backend
-    1. Pastikan sudah menginstall:
-   - Go >= 1.20
-   - MySQL / PostgreSQL
-   - Git
-
-2. Clone repository backend:
-   
+  1. Pastikan sudah menginstall:
+     - Go >= 1.20
+     - MySQL / PostgreSQL
+     - Git
+  2. Clone repository backend:
+  3.     git clone <repo-backend-url>
+  3. aydgaudui
