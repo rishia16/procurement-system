@@ -134,3 +134,29 @@ Frontend
   > - Cara reset database: hapus tabel & buat ulang sesuai schema
   > - Test API menggunakan Postman (import Simple_Procurement_System.postman_collection.json)
   > - Port default backend: http://localhost:3000 (atau menggunakan import environtment Local_Procurement_Env.postman_environment.json)
+
+## 📸 Screenshots / Demo
+
+## 🖥️ Frontend
+
+### Login Page
+![Login Page](screenshots/login.png)
+*Keterangan: Halaman login dengan input username & password.*
+
+### Dashboard & Inventory
+![Dashboard](screenshots/dashboard.png)
+*Keterangan: Menampilkan daftar item beserta stok yang tersedia.*
+
+### Create Purchase
+![Create Purchase](screenshots/create_purchase.png)
+*Keterangan: Pilih supplier, tambah item ke keranjang, klik Submit Order.*
+
+## ⚡ Backend / API Testing
+
+### API Response Example
+![API Testing](screenshots/api_response.png)
+*Keterangan: Contoh response JSON saat membuat transaksi purchase via Postman.*
+
+### Webhook / Transaction Success
+![Webhook Demo](screenshots/webhook_demo.png)
+*Keterangan: Notifikasi berhasil dikirim ke webhook setelah transaksi berhasil.*
