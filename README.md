@@ -132,6 +132,6 @@ Aplikasi web sederhana untuk mencatat pembelian barang (Procurement) dari Suppli
   - Bonus: Event Delegation, Reusable AJAX
 
 # 📝 Catatan Teknis Tambahan
-  - Cara reset database: hapus tabel & buat ulang sesuai schema
-  - Test API menggunakan Postman (import Simple_Procurement_System.postman_collection.json)
-  - Port default backend: http://localhost:3000 (atau menggunakan import environtment Local_Procurement_Env.postman_environment.json)
+  > Cara reset database: hapus tabel & buat ulang sesuai schema
+  > Test API menggunakan Postman (import Simple_Procurement_System.postman_collection.json)
+  > Port default backend: http://localhost:3000 (atau menggunakan import environtment Local_Procurement_Env.postman_environment.json)
